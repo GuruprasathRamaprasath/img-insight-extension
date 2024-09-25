@@ -1,5 +1,5 @@
 
-<img width="250" alt="img-insight-icon1" src="https://github.com/user-attachments/assets/4b1a1595-6a59-4d49-b363-486d518bace7" />
+<img width="250" alt="img-insight-icon1" src="./img-insight-extn/img-insight-icon.png" />
 
 # Copilot Extension - Image Insight
 
@@ -13,7 +13,8 @@ The Copilot Extension processes image files to generate code snippets from visua
    4. GitHub Keys api: Request verification
    5. GitHub content api: Retrieve he content of attachments, if any
 
-![img-insight components](https://github.com/user-attachments/assets/d5a1f857-7a37-4f5f-a70c-6f220730d74d)
+![img-insight components](https://github.com/user-attachments/assets/89f6d2e5-d351-4e80-a716-8216b3151c30)
+
 
 ## Features of this Extension:
 
