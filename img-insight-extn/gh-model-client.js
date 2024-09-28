@@ -6,7 +6,7 @@ const modelName = "gpt-4o";
 
 async function chatProcessing(messages,token, res) {
     console.log("model call");
-    const client = new AzureOpenAI(endpoint);
+    const client = new AzureOpenAI();
     let response = null;
     try {
         response = await client.chat.completions.create({
