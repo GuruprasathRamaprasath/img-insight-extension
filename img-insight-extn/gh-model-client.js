@@ -1,12 +1,19 @@
-const { AzureOpenAI } = require("openai");
+
+const OpenAI = require("openai");
 const { writeResponse } = require('./util');
 const ChatResponseMessage = require('./messages');
 
-const modelName = "gpt-4o";
+const endpoint = "https://models.inference.ai.azure.com";
+const modelName = "gpt-4o-mini";
+
 
 async function chatProcessing(messages,token, res) {
     console.log("model call");
-    const client = new AzureOpenAI();
+    // get the PAT token from environment variable
+    token = process.env.GITHUB_TOKEN;
+    // create the model client
+    //const client = new ModelClient(endpoint, new AzureKeyCredential(token));
+    const client =new OpenAI({ baseURL: endpoint, apiKey: token });
     let response = null;
     try {
         response = await client.chat.completions.create({
