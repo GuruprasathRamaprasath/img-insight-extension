@@ -12,11 +12,11 @@ The Copilot Extension processes image files to generate code snippets from visua
 4.  GitHub Keys api: Request verification
 5.  GitHub content api: Retrieve the content of attachments, if any
 
-![img-insight components](https://github.com/user-attachments/assets/89f6d2e5-d351-4e80-a716-8216b3151c30)
+![Image Insight Components](https://github.com/user-attachments/assets/23edd14e-72d5-4bd2-8483-f6f8e30d3794)
 
 ## Pre-requisites:
 1.  Copilot license
-2.  GitHub Models access or Azure OpenAI access
+2. [GitHub Models](https://github.com/marketplace/models) access or [Azure OpenAI service](https://azure.microsoft.com/en-in/products/ai-services/openai-service)
 
 ## Features of this Extension:
 
@@ -120,7 +120,7 @@ The Copilot Extension processes image files to generate code snippets from visua
     For using GitHub Models, no code changes are required.  
     If you're using Azure OpenAI, modify the following code snippets:
 
-    In `home.js`, update the statement:
+    In [home.js](./img-insight-extn/home.js), update the statement:
 
     ```javascript
     const { chatProcessing } = require('./gh-model-client');
@@ -132,7 +132,7 @@ The Copilot Extension processes image files to generate code snippets from visua
     const { chatProcessing } = require('./gh-model-client-Azure-OpenAI');
     ```
     
-    In `attachment-processing.js`, update the statement:
+    In [attachment-processing.js](./img-insight-extn/attachment-processing.js), update the statement:
     
     ```javascript
     const { chatProcessing } = require('./gh-model-client');
