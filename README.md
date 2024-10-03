@@ -10,7 +10,7 @@ The Copilot Extension processes image files to generate code snippets from visua
 2.  img-insight Extension: Copilot Extension to process image
 3.  GitHub Model: GPT 4o-mini model from GitHub Models for processing the user request
 4.  GitHub Keys api: Request verification
-5.  GitHub content api: Retrieve he content of attachments, if any
+5.  GitHub content api: Retrieve the content of attachments, if any
 
 ![img-insight components](https://github.com/user-attachments/assets/89f6d2e5-d351-4e80-a716-8216b3151c30)
 
@@ -89,26 +89,6 @@ The Copilot Extension processes image files to generate code snippets from visua
 
 ## Demo Video
 
-This feature generates configuration scripts based on network topology diagrams.
-
-**Sample Prompts:**
-
-```
-- Generate configuration scripts for the diagram at *image link*.
-```
-
-### 8. Screen Design to code
-
-This feature convert a web or mobile design into code by extracting style and page components
-
-**Sample Prompts:**
-
-```
-- Create html and css files for the design share *image link or attachment*.
-```
-
-## Demo Video
-
 [![Watch the Img-Insight in Action](https://img.youtube.com/vi/JEJgF48sYxM/0.jpg)](https://youtu.be/JEJgF48sYxM)
 
 ## Local Setup Instructions
@@ -119,11 +99,6 @@ This feature convert a web or mobile design into code by extracting style and pa
    git clone https://github.com/ambilykk/img-insight-extension.git
    
    ```
-2. Create a new `.env` file in the root directory of your project.
-   Add the following line to the `.env` file:
-
-    ```
-Note: *GITHUB_TOKEN* for GitHub Models; otherwise create the Azure Open AI Key
 
 2.  Create a new `.env` file in the root directory of your project.
     Add the following line to the `.env` file:
