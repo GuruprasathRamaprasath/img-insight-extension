@@ -117,8 +117,9 @@ The Copilot Extension processes image files to generate code snippets from visua
       ```
 3.  **Modify Code to Select GitHub Model or Azure OpenAI**
     
-    For using GitHub Models, no code changes are required.  
-    If you're using Azure OpenAI, modify the following code snippets:
+    For using **GitHub Models**, no code changes are required.
+    
+    If you're using **Azure OpenAI Service**, modify the following code snippets:
 
     In [home.js](./img-insight-extn/home.js), update the statement:
 
@@ -144,7 +145,7 @@ The Copilot Extension processes image files to generate code snippets from visua
     const { chatProcessing } = require('./gh-model-client-Azure-OpenAI');
     ```
   
-4.  **Install the Required Dependencies**
+5.  **Install the Required Dependencies**
     Navigate to the `img-insight-extn` directory and install the dependencies:
 
     ```bash
@@ -152,14 +153,14 @@ The Copilot Extension processes image files to generate code snippets from visua
     npm install
     ```
 
-5.  **Run the App**
+6.  **Run the App**
     Start the Extension application:
 
     ```bash
     npm start
     ```
 
-6.  **Access the Application**
+7.  **Access the Application**
     Open your browser and navigate to:
     ```
     http://localhost:3000
