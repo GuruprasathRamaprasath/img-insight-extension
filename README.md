@@ -1,4 +1,3 @@
-
 <img width="250" alt="img-insight-icon1" src="./img-insight-extn/img-insight-icon.png" />
 
 # Copilot Extension - Image Insight
@@ -7,17 +6,17 @@ The Copilot Extension processes image files to generate code snippets from visua
 
 ## Components:
 
-   1. Copilot Chat: User interfacce
-   2. img-insight Extension: Copilot Extension to process image
-   3. GitHub Model: GPT 4o-mini model from GitHub Models for processing the user request
-   4. GitHub Keys api: Request verification
-   5. GitHub content api: Retrieve he content of attachments, if any
+1.  Copilot Chat: User interfacce
+2.  img-insight Extension: Copilot Extension to process image
+3.  GitHub Model: GPT 4o-mini model from GitHub Models for processing the user request
+4.  GitHub Keys api: Request verification
+5.  GitHub content api: Retrieve he content of attachments, if any
 
 ![img-insight components](https://github.com/user-attachments/assets/89f6d2e5-d351-4e80-a716-8216b3151c30)
 
 ## Pre-requisites:
-   1. Copilot license
-   2. GitHub Models access or Azure Open AI access
+1.  Copilot license
+2.  GitHub Models access or Azure Open AI access
 
 ## Features of this Extension:
 
@@ -90,10 +89,30 @@ The Copilot Extension processes image files to generate code snippets from visua
 
 ## Demo Video
 
+This feature generates configuration scripts based on network topology diagrams.
+
+**Sample Prompts:**
+
+```
+- Generate configuration scripts for the diagram at *image link*.
+```
+
+### 8. Screen Design to code
+
+This feature convert a web or mobile design into code by extracting style and page components
+
+**Sample Prompts:**
+
+```
+- Create html and css files for the design share *image link or attachment*.
+```
+
+## Demo Video
 
 [![Watch the Img-Insight in Action](https://img.youtube.com/vi/JEJgF48sYxM/0.jpg)](https://youtu.be/JEJgF48sYxM)
 
 ## Local Setup Instructions
+
 
 1. **Clone the Repository**
    ```bash
@@ -103,32 +122,42 @@ The Copilot Extension processes image files to generate code snippets from visua
 2. Create a new `.env` file in the root directory of your project.
    Add the following line to the `.env` file:
 
-    ```properties
-    GITHUB_KEYS_URI=https://api.github.com/meta/public_keys/copilot_api
-    GITHUB_TOKEN=<your-github-token>
     ```
 Note: *GITHUB_TOKEN* for GitHub Models; otherwise create the Azure Open AI Key
 
-3. **Install the Required Dependencies**
-   Navigate to the `img-insight-extn` directory and install the dependencies:
-   ```bash
-   cd img-insight-extn
-   npm install
-   ```
+2.  Create a new `.env` file in the root directory of your project.
+    Add the following line to the `.env` file:
 
-4. **Run the App**
-   Start the Angular application:
-   ```bash
-   npm start
-   ```
+        ```properties
+        GITHUB_KEYS_URI=https://api.github.com/meta/public_keys/copilot_api
+        GITHUB_TOKEN=<your-github-token>
+        ```
 
-5. **Access the Application**
-   Open your browser and navigate to:
-   ```
-   http://localhost:3000
-   ```
+    Note: _GITHUB_TOKEN_ for GitHub Models; otherwise create the Azure Open AI Key
+
+3.  **Install the Required Dependencies**
+    Navigate to the `img-insight-extn` directory and install the dependencies:
+
+    ```bash
+    cd img-insight-extn
+    npm install
+    ```
+
+4.  **Run the App**
+    Start the Angular application:
+
+    ```bash
+    npm start
+    ```
+
+5.  **Access the Application**
+    Open your browser and navigate to:
+    ```
+    http://localhost:3000
+    ```
 
 ## Deployment to Azure
+
 1. Establish OIDC Connectivity with Microsoft Entra ID by refering the [documentation](https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/about-security-hardening-with-openid-connect#getting-started-with-oidc)
    - Add the following secrets to GitHub Secrets:
      ```properties
@@ -141,7 +170,7 @@ Note: *GITHUB_TOKEN* for GitHub Models; otherwise create the Azure Open AI Key
    ```properties
    GITHUB_KEYS_URI=https://api.github.com/meta/public_keys/copilot_api
    GITHUB_TOKEN=<your-github-token>
-   ``` 
+   ```
 4. Update the `app-name` input for the workflow [Node Deploy](.github/workflows/node-deploy.yml) with the Azure Web application name
 5. Trigger the workflow by selecting the `pack-name=img-insight-extn` and clicking on `Run workflow`
 
@@ -150,6 +179,7 @@ Note: *GITHUB_TOKEN* for GitHub Models; otherwise create the Azure Open AI Key
 [![How to Configure Copilot Extension](https://img.youtube.com/vi/ky5TMI9skLE/0.jpg)](https://youtu.be/ky5TMI9skLE)
 
 ## References
+
 1. [Copilot Extension](https://github.com/features/copilot/extensions)
 2. [Copilot Extension Public Beta](https://github.blog/news-insights/product-news/enhancing-the-github-copilot-ecosystem-with-copilot-extensions-now-in-public-beta/)
 3. [Copilot Extension Learning Resources](https://resources.github.com/learn/pathways/copilot/extensions/essentials-of-github-copilot-extensions/)
