@@ -15,76 +15,79 @@ The Copilot Extension processes image files to generate code snippets from visua
 ![img-insight components](https://github.com/user-attachments/assets/89f6d2e5-d351-4e80-a716-8216b3151c30)
 
 ## Pre-requisites:
-
 1.  Copilot license
 2.  GitHub Models access or Azure Open AI access
 
 ## Features of this Extension:
 
-### 1. Analyze and Interpret the Architecture Diagram
+  ### 1. Analyze and Interpret the Architecture Diagram
+   This feature allows you to analyze and interpret architecture diagrams.
 
-This feature allows you to analyze and interpret architecture diagrams.
+  **Sample Prompts:**
+  ```
+  - Explain the architecture at *image link*.
+  - Explain the attached image 
+  ```
+  
+  ### 2. Generate Class Files
+  This feature helps you generate class files based on diagrams.
+  
+  **Sample Prompts:**
+  ```
+  - Create C# class files using the diagram at *image link*.
+  - Create Java class files based on attached diagram
+  ```
+  
+  ### 3. Converting Diagram-Based Logic into Code
+  This feature converts logic from diagrams into code.
+  
+  **Sample Prompts:**
+  ```
+  - Convert this logic into a JavaScript function *image link*.
+  - Create Python code based on the attached flow-chart
+  ```
+  
+  ### 4. Image-Based Data Modeling
+  This feature generates SQL create statements using entities defined in images.
+  
+  **Sample Prompts:**
+  ```
+  - Generate SQL create statements using the entities defined at *image link* .
+  ```
+  
+  ### 5. Identify Target Resource Requirements
+  This feature identifies the Azure resources utilized in architecture diagrams.
+  
+  **Sample Prompts:**
+  ```
+  - What are the Azure resources utilized in *image link* 
+  ```
+  
+  ### 6. Generating Test Cases from Visual Flows
+  This feature generates unit test cases using JUnit to address functionality defined in visual flows.
+  
+  **Sample Prompts:**
+  ```
+  - Generate unit test cases using JUnit to address the functionality defined at *image link*.
+  ```
+  
+  ### 7. Parse Network Topology Diagrams to Generate Configuration Scripts
+  This feature generates configuration scripts based on network topology diagrams.
+  
+  **Sample Prompts:**
+  ```
+  - Generate configuration scripts for the diagram at *image link*.
+  ```
 
-**Sample Prompts:**
+ ### 8. Screen Design to code
+  This feature convert a web or mobile design into code by extracting style and page components
+  
+  **Sample Prompts:**
+  ```
+  - Create html and css files for the design share *image link or attachment*.
+  ```
 
-```
-- Explain the architecture at *image link*.
-- Explain the attached image
-```
-
-### 2. Generate Class Files
-
-This feature helps you generate class files based on diagrams.
-
-**Sample Prompts:**
-
-```
-- Create C# class files using the diagram at *image link*.
-- Create Java class files based on attached diagram
-```
-
-### 3. Converting Diagram-Based Logic into Code
-
-This feature converts logic from diagrams into code.
-
-**Sample Prompts:**
-
-```
-- Convert this logic into a JavaScript function *image link*.
-- Create Python code based on the attached flow-chart
-```
-
-### 4. Image-Based Data Modeling
-
-This feature generates SQL create statements using entities defined in images.
-
-**Sample Prompts:**
-
-```
-- Generate SQL create statements using the entities defined at *image link* .
-```
-
-### 5. Identify Target Resource Requirements
-
-This feature identifies the Azure resources utilized in architecture diagrams.
-
-**Sample Prompts:**
-
-```
-- What are the Azure resources utilized in *image link*
-```
-
-### 6. Generating Test Cases from Visual Flows
-
-This feature generates unit test cases using JUnit to address functionality defined in visual flows.
-
-**Sample Prompts:**
-
-```
-- Generate unit test cases using JUnit to address the functionality defined at *image link*.
-```
-
-### 7. Parse Network Topology Diagrams to Generate Configuration Scripts
+## Demo Video
 
 This feature generates configuration scripts based on network topology diagrams.
 
@@ -110,12 +113,17 @@ This feature convert a web or mobile design into code by extracting style and pa
 
 ## Local Setup Instructions
 
-1.  **Clone the Repository**
 
-    ```bash
-    git clone https://github.com/ambilykk/img-insight-extension.git
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/ambilykk/img-insight-extension.git
+   
+   ```
+2. Create a new `.env` file in the root directory of your project.
+   Add the following line to the `.env` file:
 
     ```
+Note: *GITHUB_TOKEN* for GitHub Models; otherwise create the Azure Open AI Key
 
 2.  Create a new `.env` file in the root directory of your project.
     Add the following line to the `.env` file:
