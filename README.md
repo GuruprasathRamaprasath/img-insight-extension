@@ -97,7 +97,7 @@ The Copilot Extension processes image files to generate code snippets from visua
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/octodemo/amb-copilot-extensions.git
+   git clone https://github.com/ambilykk/img-insight-extension.git
    
    ```
 2. Create a new `.env` file in the root directory of your project.
